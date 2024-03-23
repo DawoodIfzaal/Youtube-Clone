@@ -1,0 +1,148 @@
+.header-con{
+  height: 56px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(204, 204, 204);
+  background-color: white;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.first{
+  margin-left: 20px;
+  width: 160px;
+  display: flex; 
+}
+
+.hamburger{
+  width: 30px;
+  height: 22px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.yt-logo{
+  width: 120px;
+  height: 20px; 
+  cursor: pointer;
+}
+
+.middle{
+  display: flex;
+  flex: 1;
+  margin-left: 250px;
+  margin-right: 225px;
+}
+
+.search-bar{
+  flex: 1;
+  width: 0;
+  font-family: Roboto,arial;
+  height: 36px;
+  border: solid;
+  padding-left: 16px;
+  font-size: 16px;
+  border-right: none;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 3px 0 0 3px;
+}
+
+.search{
+  width: 60px;
+  height: 40px;
+  border-style: solid;
+  cursor: pointer;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  background-color: rgb(247, 247, 247);
+  border-radius: 0 3px 3px 0;
+}
+
+.search-logo, .voice-logo{
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-con{
+  position: relative;
+}
+
+.search-con .tooltip{
+  position: absolute;
+  font-family: roboto, arial;
+  font-size: 12px;
+  background-color: rgb(158, 158, 158);
+  color: white;
+  padding: 8px 6px 8px 6px;
+  opacity: 0;
+  bottom: -38px;
+  border-radius: 4px;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-con:hover .tooltip{
+  opacity: 1;
+}
+
+.voice-search{
+  margin-left: 8px;
+  width: 40px;
+  cursor: pointer;
+  height: 38px;
+  padding-top: 3px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+
+.end{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.upload-logo, .ytapp-logo, .noti-logo{
+  width: 25px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.pfp{ 
+  width: 27px;
+  cursor: pointer;
+  margin-right: 20px;
+  height: 27px;
+  border-radius: 200px;
+} 
+
+.noti-con{
+  position: relative;
+}
+
+.noti-count{
+  position: absolute;
+  top: 2px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  font-family: roboto, arial;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 8px;
+  border-radius: 100px;
+}
